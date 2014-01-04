@@ -13,6 +13,7 @@ import java.io.IOException;
  */
 public class Testis {
     public static void main(String args[]) throws IOException {
+        //fuck
 ////          Document doc =  Jsoup.connect("http://spys.ru/en/anonymous-proxy-list/").get();
 ////        Elements elements =         doc.getAllElements();
 ////        for (Element element: elements){
