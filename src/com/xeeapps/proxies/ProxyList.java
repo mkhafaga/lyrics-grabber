@@ -148,6 +148,8 @@ public static  void main(String args[]) throws IOException {
             URL url = new URL("http://www.azlyrics.com/");
 
             HttpURLConnection uc = (HttpURLConnection)url.openConnection(proxy );
+            uc.setConnectTimeout(160000);
+            uc.setReadTimeout(160000);
             uc.connect();
             BufferedReader in = new BufferedReader(new InputStreamReader(uc.getInputStream()));
             in.readLine();

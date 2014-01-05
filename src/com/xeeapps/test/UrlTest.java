@@ -17,7 +17,7 @@ import java.net.URL;
  */
 public class UrlTest {
     public static void main(String args[]) throws IOException {    //90.150.9.38:1080
-       String proxyText[] ="122.96.59.100:80".trim().split(":");
+       String proxyText[] ="88.159.114.9:80".trim().split(":");
             Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(proxyText[0],new Integer(proxyText[1])));
 
        // Jsoup.proxy =  proxy;

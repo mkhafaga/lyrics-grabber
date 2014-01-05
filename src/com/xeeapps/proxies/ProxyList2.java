@@ -98,6 +98,8 @@ public class ProxyList2 {
             URL url = new URL("http://www.azlyrics.com/");
 
             HttpURLConnection uc = (HttpURLConnection)url.openConnection(proxy );
+            uc.setConnectTimeout(160000);
+            uc.setReadTimeout(160000);
             uc.connect();
             BufferedReader in = new BufferedReader(new InputStreamReader(uc.getInputStream()));
             in.readLine();
